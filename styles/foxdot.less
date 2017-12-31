@@ -1,0 +1,18 @@
+@import "syntax-variables";
+
+@keyframes foxdot-flash {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.editor {
+	.highlight.foxdot-flash .region {
+		-webkit-animation: foxdot-flash 300ms linear forwards;
+		background-color: @syntax-selection-flash-color;
+		z-index: -2;
+	}
+}
