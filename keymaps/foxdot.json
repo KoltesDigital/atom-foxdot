@@ -1,0 +1,9 @@
+{
+  ".workspace .editor[data-grammar='source python']": {
+    "ctrl-alt-f": "foxdot:toggle",
+    "ctrl-enter": "foxdot:evaluate-blocks",
+    "ctrl-alt-enter": "foxdot:evaluate-file",
+    "alt-enter": "foxdot:evaluate-lines",
+    "ctrl-.": "foxdot:clear-clock"
+  }
+}

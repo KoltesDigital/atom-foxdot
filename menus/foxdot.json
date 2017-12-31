@@ -1,0 +1,75 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "FoxDot",
+        "submenu": [
+          {
+            "label": "Toggle",
+            "command": "foxdot:toggle"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "label": "Evaluate file",
+            "command": "foxdot:evaluate-file"
+          },
+          {
+            "label": "Evaluate block(s)",
+            "command": "foxdot:evaluate-blocks"
+          },
+          {
+            "label": "Evaluate line(s)",
+            "command": "foxdot:evaluate-lines"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "label": "Clear clock",
+            "command": "foxdot:clear-clock"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "FoxDot",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "foxdot:toggle"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "label": "Evaluate file",
+              "command": "foxdot:evaluate-file"
+            },
+            {
+              "label": "Evaluate block(s)",
+              "command": "foxdot:evaluate-blocks"
+            },
+            {
+              "label": "Evaluate line(s)",
+              "command": "foxdot:evaluate-lines"
+            },
+            {
+              "type": "separator"
+            },
+            {
+              "label": "Clear clock",
+              "command": "foxdot:clear-clock"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "foxdot",
+  "main": "./lib/foxdot",
+  "version": "0.0.0",
+  "description": "FoxDot interface for Atom.",
+  "keywords": [
+    "algorave",
+    "livecoding",
+    "supercollider"
+  ],
+  "repository": "https://github.com/KoltesDigital/atom-foxdot",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
