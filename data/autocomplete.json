@@ -1,0 +1,1706 @@
+[
+  {
+    "text": "Accompany",
+    "type": "class",
+    "description": "Like PlayerKey except it returns"
+  },
+  {
+    "text": "Add",
+    "type": "function"
+  },
+  {
+    "text": "Bang",
+    "type": "class"
+  },
+  {
+    "text": "BufChar",
+    "type": "class"
+  },
+  {
+    "text": "Buffer",
+    "type": "class"
+  },
+  {
+    "text": "BufferManager",
+    "type": "class"
+  },
+  {
+    "text": "COLOURS",
+    "type": "class"
+  },
+  {
+    "text": "ClassPatternMethod",
+    "type": "function",
+    "description": "Decorator that makes a function into a metaPattern class method"
+  },
+  {
+    "text": "Clock",
+    "type": "constant"
+  },
+  {
+    "text": "Clock.bpm",
+    "type": "variable"
+  },
+  {
+    "text": "CodeString",
+    "type": "class"
+  },
+  {
+    "text": "CodeType",
+    "type": "class",
+    "description": "code(argcount, kwonlyargcount, nlocals, stacksize, flags, codestring,\n      constants, names, varnames, filename, name, firstlineno,\n      lnotab[, freevars[, cellvars]])\n\nCreate a code object.  Not for the faint of heart."
+  },
+  {
+    "text": "CompiledSynthDef",
+    "type": "class"
+  },
+  {
+    "text": "Convert",
+    "type": "function",
+    "description": "Returns tuples/PGroups as PGroups, and anything else as Patterns"
+  },
+  {
+    "text": "DatagramRequestHandler",
+    "type": "class",
+    "description": "Define self.rfile and self.wfile for datagram sockets."
+  },
+  {
+    "text": "DefaultServer",
+    "type": "constant"
+  },
+  {
+    "text": "Div",
+    "type": "function"
+  },
+  {
+    "text": "DominantPattern",
+    "type": "function",
+    "description": "Returns the class (and the relative pattern) for the\n        type of Pattern to use in a mathematical operation"
+  },
+  {
+    "text": "Effect",
+    "type": "class"
+  },
+  {
+    "text": "EffectManager",
+    "type": "class"
+  },
+  {
+    "text": "EmptyItem",
+    "type": "class",
+    "description": "Can be used in a pattern and and is essentially not there"
+  },
+  {
+    "text": "EuclidsAlgorithm",
+    "type": "function"
+  },
+  {
+    "text": "FileSynthDef",
+    "type": "class"
+  },
+  {
+    "text": "FloorDiv",
+    "type": "function"
+  },
+  {
+    "text": "ForkingMixIn",
+    "type": "class",
+    "description": "Mix-in class to handle each request in a new thread."
+  },
+  {
+    "text": "ForkingOSCServer",
+    "type": "class",
+    "description": "An Asynchronous OSCServer.\n\tThis server forks a new process to handle each incoming request."
+  },
+  {
+    "text": "Format",
+    "type": "function",
+    "description": "If data is a list, returns Pattern(data). If data is a tuple, returns PGroup(data).\n        Returns data if neither."
+  },
+  {
+    "text": "FoxDotCode",
+    "type": "class"
+  },
+  {
+    "text": "FunctionType",
+    "type": "class",
+    "description": "function(code, globals[, name[, argdefs[, closure]]])\n\nCreate a function object from a code object and a dictionary.\nThe optional name string overrides the name from the code object.\nThe optional argdefs tuple specifies the default argument values.\nThe optional closure tuple supplies the bindings for free variables."
+  },
+  {
+    "text": "GeneratorPattern",
+    "type": "class",
+    "description": "Used for when a Pattern does not generate a set length pattern,\n        e.g. random patterns"
+  },
+  {
+    "text": "Get",
+    "type": "function"
+  },
+  {
+    "text": "Group",
+    "type": "constant"
+  },
+  {
+    "text": "Group",
+    "type": "class"
+  },
+  {
+    "text": "GroupAttr",
+    "type": "class"
+  },
+  {
+    "text": "History",
+    "type": "class",
+    "description": "Stores osc messages send from the TempoClock so that if the\n    Clock is reveresed we can just send the osc messages already sent"
+  },
+  {
+    "text": "In",
+    "type": "class"
+  },
+  {
+    "text": "LCM",
+    "type": "function",
+    "description": "Lowest Common Multiple"
+  },
+  {
+    "text": "LiveObject",
+    "type": "class"
+  },
+  {
+    "text": "LoopFile",
+    "type": "class"
+  },
+  {
+    "text": "LoopSynthDef",
+    "type": "class"
+  },
+  {
+    "text": "MIDIDeviceNotFound",
+    "type": "class"
+  },
+  {
+    "text": "Message",
+    "type": "class",
+    "description": "Wrapper for JSON messages sent to the server"
+  },
+  {
+    "text": "MethodCall",
+    "type": "class",
+    "description": "Class to represent an object's method call that,\n        when called, schedules itself in the future"
+  },
+  {
+    "text": "MethodList",
+    "type": "class"
+  },
+  {
+    "text": "MethodType",
+    "type": "class",
+    "description": "method(function, instance)\n\nCreate a bound instance method object."
+  },
+  {
+    "text": "MidiIn",
+    "type": "class"
+  },
+  {
+    "text": "MidiOut",
+    "type": "class"
+  },
+  {
+    "text": "Mod",
+    "type": "function"
+  },
+  {
+    "text": "Mul",
+    "type": "function"
+  },
+  {
+    "text": "Nil",
+    "type": "function"
+  },
+  {
+    "text": "NoCallbackError",
+    "type": "class",
+    "description": "This error is raised (by an OSCServer) when an OSCMessage with an 'unmatched' address-pattern\n\tis received, and no 'default' handler is registered."
+  },
+  {
+    "text": "NotSubscribedError",
+    "type": "class",
+    "description": "This error is raised (by an OSCMultiClient) when an attempt is made to unsubscribe a host\n\tthat isn't subscribed."
+  },
+  {
+    "text": "NumberKey",
+    "type": "class"
+  },
+  {
+    "text": "OSCAddressSpace",
+    "type": "class"
+  },
+  {
+    "text": "OSCBundle",
+    "type": "class",
+    "description": "Builds a 'bundle' of OSC messages.\n\t\n\tOSCBundle objects are container objects for building OSC-bundles of OSC-messages.\n\tAn OSC-bundle is a special kind of OSC-message which contains a list of OSC-messages\n\t(And yes, OSC-bundles may contain other OSC-bundles...)\n\t\n\tOSCBundle objects behave much the same as OSCMessage objects, with these exceptions:\n\t  - if an item or items to be appended or inserted are not OSCMessage objects, \n\t  OSCMessage objectss are created to encapsulate the item(s)\n\t  - an OSC-bundle does not have an address of its own, only the contained OSC-messages do.\n\t  The OSCBundle's 'address' is inherited by any OSCMessage the OSCBundle object creates.\n\t  - OSC-bundles have a timetag to tell the receiver when the bundle should be processed.\n\t  The default timetag value (0) means 'immediately'"
+  },
+  {
+    "text": "OSCClient",
+    "type": "class",
+    "description": "Simple OSC Client. Handles the sending of OSC-Packets (OSCMessage or OSCBundle) via a UDP-socket"
+  },
+  {
+    "text": "OSCClientError",
+    "type": "class",
+    "description": "Class for all OSCClient errors"
+  },
+  {
+    "text": "OSCConnect",
+    "type": "class"
+  },
+  {
+    "text": "OSCError",
+    "type": "class",
+    "description": "Base Class for all OSC-related errors"
+  },
+  {
+    "text": "OSCMessage",
+    "type": "class",
+    "description": "Builds typetagged OSC messages. \n\t\n\tOSCMessage objects are container objects for building OSC-messages.\n\tOn the 'front' end, they behave much like list-objects, and on the 'back' end\n\tthey generate a binary representation of the message, which can be sent over a network socket.\n\tOSC-messages consist of an 'address'-string (not to be confused with a (host, port) IP-address!),\n\tfollowed by a string of 'typetags' associated with the message's arguments (ie. 'payload'), \n\tand finally the arguments themselves, encoded in an OSC-specific way.\n\t\n\tOn the Python end, OSCMessage are lists of arguments, prepended by the message's address.\n\tThe message contents can be manipulated much like a list:\n\t  >>> msg = OSCMessage(\"/my/osc/address\")\n\t  >>> msg.append('something')\n\t  >>> msg.insert(0, 'something else')\n\t  >>> msg[1] = 'entirely'\n\t  >>> msg.extend([1,2,3.])\n\t  >>> msg += [4, 5, 6.]\n\t  >>> del msg[3:6]\n\t  >>> msg.pop(-2)\n\t  5\n\t  >>> print msg\n\t  /my/osc/address ['something else', 'entirely', 1, 6.0]\n\n\tOSCMessages can be concatenated with the + operator. In this case, the resulting OSCMessage\n\tinherits its address from the left-hand operand. The right-hand operand's address is ignored.\n\tTo construct an 'OSC-bundle' from multiple OSCMessage, see OSCBundle!\n\t\n\tAdditional methods exist for retreiving typetags or manipulating items as (typetag, value) tuples."
+  },
+  {
+    "text": "OSCMultiClient",
+    "type": "class",
+    "description": "'Multiple-Unicast' OSC Client. Handles the sending of OSC-Packets (OSCMessage or OSCBundle) via a UDP-socket\n\tThis client keeps a dict of 'OSCTargets'. and sends each OSCMessage to each OSCTarget\n\tThe OSCTargets are simply (host, port) tuples, and may be associated with an OSC-address prefix.\n\tthe OSCTarget's prefix gets prepended to each OSCMessage sent to that target."
+  },
+  {
+    "text": "OSCRequestHandler",
+    "type": "class",
+    "description": "RequestHandler class for the OSCServer"
+  },
+  {
+    "text": "OSCServer",
+    "type": "class",
+    "description": "A Synchronous OSCServer\n\tServes one request at-a-time, until the OSCServer is closed.\n\tThe OSC address-pattern is matched against a set of OSC-adresses\n\tthat have been registered to the server with a callback-function.\n\tIf the adress-pattern of the message machtes the registered address of a callback,\n\tthat function is called."
+  },
+  {
+    "text": "OSCServerError",
+    "type": "class",
+    "description": "Class for all OSCServer errors"
+  },
+  {
+    "text": "OSCStreamRequestHandler",
+    "type": "class",
+    "description": "This is the central class of a streaming OSC server. If a client\n\tconnects to the server, the server instantiates a OSCStreamRequestHandler\n\tfor each new connection. This is fundamentally different to a packet\n\toriented server which has a single address space for all connections.\n\tThis connection based (streaming) OSC server maintains an address space\n\tfor each single connection, because usually tcp server spawn a new thread\n\tor process for each new connection. This would generate severe\n\tmultithreading synchronization problems when each thread would operate on\n\tthe same address space object. Therefore: To implement a streaming/TCP OSC\n\tserver a custom handler must be implemented which implements the\n\tsetupAddressSpace member in which it creates its own address space for this\n\tvery connection. This has been done within the testbench and can serve as\n\tinspiration."
+  },
+  {
+    "text": "OSCStreamingClient",
+    "type": "class",
+    "description": "OSC streaming client.\n\tA streaming client establishes a connection to a streaming server but must\n\tbe able to handle replies by the server as well. To accomplish this the\n\treceiving takes place in a secondary thread, because no one knows if we\n\thave to expect a reply or not, i.e. synchronous architecture doesn't make\n\tmuch sense.\n\tReplies will be matched against the local address space. If message\n\thandlers access code of the main thread (where the client messages are sent\n\tto the server) care must be taken e.g. by installing sychronization\n\tmechanisms or by using an event dispatcher which can handle events\n\toriginating from other threads."
+  },
+  {
+    "text": "OSCStreamingServer",
+    "type": "class",
+    "description": "A connection oriented (TCP/IP) OSC server."
+  },
+  {
+    "text": "OSCStreamingServerThreading",
+    "type": "class"
+  },
+  {
+    "text": "Or",
+    "type": "function"
+  },
+  {
+    "text": "P",
+    "type": "function",
+    "description": "Used to define lists as patterns:\n\n        `P[1,2,3]` is equivalent to `Pattern([1,2,3])` and\n        `P(1,2,3)` is equivalent to `Pattern((1,2,3))` and\n        `P+(1,2,3)` is equivalient to `Pattern((1,2,3))`.\n\n        Ranges can be created using slicing, e.g. `P[1:6:2]` will generate the range\n        1 to 6 in steps of 2, thus creating the Pattern `[1, 3, 5]`. Slices can be\n        combined with other values in a Pattern such that `P[0,2,1:10]` will return\n        the Pattern `P[0, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9]`"
+  },
+  {
+    "text": "P10",
+    "type": "function",
+    "description": "Returns an n-length Pattern of a randomly generated series of 1's and 0's"
+  },
+  {
+    "text": "PAlt",
+    "type": "function",
+    "description": "Returns a Pattern generated by alternating the values in the given sequences"
+  },
+  {
+    "text": "PBeat",
+    "type": "function",
+    "description": "Returns a Pattern of durations based on an input string where\n        non-whitespace denote a pulse e.g.\n        ```\n        >>> PTab(\"x xxx x\")\n        P[1, 0.5, 0.5, 1, 0.5]"
+  },
+  {
+    "text": "PChain",
+    "type": "class"
+  },
+  {
+    "text": "PDelay",
+    "type": "function"
+  },
+  {
+    "text": "PDur",
+    "type": "function",
+    "description": "Returns the *actual* durations based on Euclidean rhythms (see PEuclid) where dur\n        is the length of each step.\n        e.g. `PDur(3, 8)` will return `P[0.75, 0.75, 0.5]`"
+  },
+  {
+    "text": "PEq",
+    "type": "function"
+  },
+  {
+    "text": "PEuclid",
+    "type": "function",
+    "description": "Returns the Euclidean rhythm which spreads 'n' pulses over 'k' steps as evenly as possible.\n        e.g. `PEuclid(3, 8)` will return `P[1, 0, 0, 1, 0, 0, 1, 0]`"
+  },
+  {
+    "text": "PEuclid2",
+    "type": "function",
+    "description": "Same as PEuclid except it returns an array filled with 'lo' value instead of 0\n        and 'hi' value instead of 1. Can be used to generate characters patterns used to\n        play sample like play(PEuclid2(3,8,'-','X')) will be equivalent to\n        play(P['X', '-', '-', 'X', '-', '-', 'X', '-'])\n        that's like saying play(\"X--X--X-\")"
+  },
+  {
+    "text": "PFibMod",
+    "type": "class",
+    "description": "Returns the fibonacci sequence -- maybe a bad idea"
+  },
+  {
+    "text": "PGroup",
+    "type": "class",
+    "description": "Class to represent any groupings of notes as denoted by brackets.\n        PGroups should only be found within a Pattern object."
+  },
+  {
+    "text": "PGroupDiv",
+    "type": "class",
+    "description": "Stutter every other request"
+  },
+  {
+    "text": "PGroupMod",
+    "type": "class",
+    "description": "Useful for when you want many nested groups. This PGroup flattens the original\n        but the delay times are calculated in the same way as if the values were neseted"
+  },
+  {
+    "text": "PGroupPlus",
+    "type": "class",
+    "description": "Stutters the values over the length of and event's 'sus'"
+  },
+  {
+    "text": "PGroupPow",
+    "type": "class",
+    "description": "Stutters a shuffled version the values over the length of and event's 'dur'"
+  },
+  {
+    "text": "PGroupPrime",
+    "type": "class"
+  },
+  {
+    "text": "PGroupStar",
+    "type": "class",
+    "description": "Stutters the values over the length of and event's 'dur'"
+  },
+  {
+    "text": "PGroupXor",
+    "type": "class",
+    "description": "The delay of this PGroup is s"
+  },
+  {
+    "text": "PIndex",
+    "type": "class",
+    "description": "Returns the index being accessed"
+  },
+  {
+    "text": "PJoin",
+    "type": "function"
+  },
+  {
+    "text": "PNe",
+    "type": "function"
+  },
+  {
+    "text": "POperand",
+    "type": "class"
+  },
+  {
+    "text": "PPairs",
+    "type": "function",
+    "description": "Laces a sequence with a second sequence obtained\n        by performing a function on the original. By default this is\n        `lambda n: 8 - n`."
+  },
+  {
+    "text": "PQuicken",
+    "type": "function"
+  },
+  {
+    "text": "PRand",
+    "type": "class",
+    "description": "Returns a random integer between start and stop. If start is a container-type it returns\n        a random item for that container."
+  },
+  {
+    "text": "PRange",
+    "type": "function",
+    "description": "Returns a Pattern equivalent to `Pattern(range(start, stop, step))"
+  },
+  {
+    "text": "PRhythm",
+    "type": "function",
+    "description": "[1,(3,8)] -> [(1,2.75,3.5),2]\n    *work in progress*"
+  },
+  {
+    "text": "PShuf",
+    "type": "function",
+    "description": "PShuf(seq) -> Returns a shuffled version of seq"
+  },
+  {
+    "text": "PSine",
+    "type": "function",
+    "description": "Returns values of one cycle of sine wave split into 'n' parts"
+  },
+  {
+    "text": "PSq",
+    "type": "function",
+    "description": "Returns a Pattern"
+  },
+  {
+    "text": "PSquare",
+    "type": "class",
+    "description": "Returns the square of the index being accessed"
+  },
+  {
+    "text": "PStep",
+    "type": "function",
+    "description": "Returns a Pattern that every n-term is 'value' otherwise 'default'"
+  },
+  {
+    "text": "PStretch",
+    "type": "function",
+    "description": "Returns 'seq' as a Pattern and looped until its length is 'size'\n        e.g. `PStretch([0,1,2], 5)` returns `P[0, 1, 2, 0, 1]`"
+  },
+  {
+    "text": "PStutter",
+    "type": "function",
+    "description": "PStutter(seq, n) -> Creates a pattern such that each item in the array is repeated n times (n can be a pattern)"
+  },
+  {
+    "text": "PSum",
+    "type": "function",
+    "description": "Returns a Pattern of length 'n' that sums to equal 'total'\n\n        ```\n        e.g. PSum(3,8) -> P[3, 3, 2]\n             PSum(5,4) -> P[1, 0.75, 0.75, 0.75, 0.75]\n        ```"
+  },
+  {
+    "text": "PTree",
+    "type": "class",
+    "description": "Takes a starting value and two functions as arguments. The first function, f, must\n        take one value and return a container-type of values and the second function, choose,\n        must take a container-type and return a single value. In essence you are creating a\n        tree based on the f(n) where n is the last value chosen by choose."
+  },
+  {
+    "text": "PTri",
+    "type": "function",
+    "description": "Returns a Pattern equivalent to `Pattern(range(start, stop, step)) with its reversed form appended."
+  },
+  {
+    "text": "PWalk",
+    "type": "class"
+  },
+  {
+    "text": "PWhite",
+    "type": "class",
+    "description": "Returns random floating point values between 'lo' and 'hi'"
+  },
+  {
+    "text": "PZip",
+    "type": "function",
+    "description": "Creates a Pattern that 'zips' together multiple patterns. `PZip([0,1,2], [3,4])`\n        will create the Pattern `P[(0, 3), (1, 4), (2, 3), (0, 4), (1, 3), (2, 4)]`"
+  },
+  {
+    "text": "PZip2",
+    "type": "function",
+    "description": "Like `PZip` but only uses two Patterns. Zips together values if they satisfy the rule."
+  },
+  {
+    "text": "ParseError",
+    "type": "class"
+  },
+  {
+    "text": "Pattern",
+    "type": "class",
+    "description": "Base type pattern"
+  },
+  {
+    "text": "PatternContainer",
+    "type": "class"
+  },
+  {
+    "text": "PatternFormat",
+    "type": "function",
+    "description": "If data is a list, returns Pattern(data). If data is a tuple, returns PGroup(data).\n        Returns data if neither."
+  },
+  {
+    "text": "PatternMethod",
+    "type": "function",
+    "description": "Decorator that makes a function into a metaPattern method"
+  },
+  {
+    "text": "PlayString",
+    "type": "class",
+    "description": "Container for character objects"
+  },
+  {
+    "text": "Player",
+    "type": "class",
+    "description": "FoxDot generates music by creating instances of `Player` and giving them instructions\n    to follow. At startup FoxDot creates many instances of `Player` and assigns them to\n    any valid two character variable. This is so that when you start playing you don't \n    have to worry about typing `myPlayer = Player()` and `myPlayer_2 = Player()` every\n    time you want to do something new. Of course there is nothing stopping you from \n    doing that if yo so wish.\n\n    Instances of `Player` are given instructions to generate music using the `>>` syntax,\n    overriding the bitshift operator, and should be given an instance of `SynthDefProxy`.\n    A `SynthDefProxy` is created when calling an instance of `SynthDef` - these are the\n    \"instruments\" used by player objects and are written in SuperCollider code. You can\n    see more information about these in the `SCLang` module. Below describes how to assign\n    a `SynthDefProxy` of the `SynthDef` `pads` to a `Player` instance called `p1`:\n\n    ```python\n    # Calling pads as if it were a function returns a \n    # pads SynthDefProxy object which is assigned to p1\n    p1 >> pads()\n\n    # You could store several instances and assign them at different times\n    proxy_1 = pads([0,1,2,3], dur=1/2)\n    proxy_2 = pads([4,5,6,7], dur=1)\n\n    p1 >> proxy_1 # Assign the first to p1\n    p1 >> proxy_2 # This replaces the instructions being followed by p1\n    ```"
+  },
+  {
+    "text": "PlayerKey",
+    "type": "class"
+  },
+  {
+    "text": "PlayerKeyException",
+    "type": "class"
+  },
+  {
+    "text": "Pow",
+    "type": "function"
+  },
+  {
+    "text": "PulsesToDurations",
+    "type": "function",
+    "description": "Returns a list of durations based on pulses (1s) and blanks (0s).\n        Data should be a list of [1,0] where 1 is a pulse."
+  },
+  {
+    "text": "Pvar",
+    "type": "function",
+    "description": "A TimeVar that represents Patterns that change over time e.g.\n        ```\n        >>> a = Pvar([ [0,1,2,3], [4,5] ], 4)\n        >>> print a # time is 0\n        P[0, 1, 2, 3]\n        >>> print a # time is 4\n        P[4, 5]"
+  },
+  {
+    "text": "Pvar",
+    "type": "class",
+    "description": "A TimeVar that represents Patterns that change over time e.g.\n        ```\n        >>> a = Pvar([ [0,1,2,3], [4,5] ], 4)\n        >>> print a # time is 0\n        P[0, 1, 2, 3]\n        >>> print a # time is 4\n        P[4, 5]"
+  },
+  {
+    "text": "PvarGenerator",
+    "type": "class",
+    "description": "If a TimeVar is used in a Pattern function e.g. `PDur(var([3,5]), 8)`\n        then a `PvarGenerator` is returned. Each argument is stored as a TimeVar\n        and the function is called whenever the arguments are changed"
+  },
+  {
+    "text": "PvarGeneratorEx",
+    "type": "class",
+    "description": "Un-Documented"
+  },
+  {
+    "text": "PwRand",
+    "type": "class"
+  },
+  {
+    "text": "PxRand",
+    "type": "class"
+  },
+  {
+    "text": "Queue",
+    "type": "class"
+  },
+  {
+    "text": "QueueBlock",
+    "type": "class"
+  },
+  {
+    "text": "QueueObj",
+    "type": "class",
+    "description": "Class representing each item in a `QueueBlock` instance"
+  },
+  {
+    "text": "Repeatable",
+    "type": "class"
+  },
+  {
+    "text": "RequestHandler",
+    "type": "class",
+    "description": "Created whenever a new connection to the server is made:\n        self.request = socket\n        self.server  = Server instance\n        self.client_address = (address, port)"
+  },
+  {
+    "text": "RequestTimeout",
+    "type": "class",
+    "description": "Raised if expecting a response from the server but received none"
+  },
+  {
+    "text": "Root",
+    "type": "constant"
+  },
+  {
+    "text": "SCLangBidirectionalClient",
+    "type": "class",
+    "description": "This is a combination client/server\n\n    The UDP server is necessary for receiving responses from the SCLang server\n    when we query it with requests.\n\n    Note that this is not thread-safe, as the receive() method can discard messages"
+  },
+  {
+    "text": "SCLangClient",
+    "type": "class"
+  },
+  {
+    "text": "SCLangServerManager",
+    "type": "class"
+  },
+  {
+    "text": "SampleSynthDef",
+    "type": "class"
+  },
+  {
+    "text": "Samples",
+    "type": "constant"
+  },
+  {
+    "text": "Scale",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.chromatic",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.default",
+    "type": "variable"
+  },
+  {
+    "text": "Scale.dorian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.dorian2",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.egyptian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.freq",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.harmonicMajor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.harmonicMinor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.indian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.justMajor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.justMinor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.locrian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.locrianMajor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.lydian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.lydianMinor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.major",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.majorPentatonic",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.melodicMinor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.minor",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.minorPentatonic",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.mixolydian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.phrygian",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.prometheus",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.ryan",
+    "type": "constant"
+  },
+  {
+    "text": "Scale.zhi",
+    "type": "constant"
+  },
+  {
+    "text": "ScalePattern",
+    "type": "class"
+  },
+  {
+    "text": "ScheduleError",
+    "type": "class"
+  },
+  {
+    "text": "ServerInfo",
+    "type": "class",
+    "description": "ServerInfo(sample_rate, actual_sample_rate, num_synths, num_groups, num_audio_bus_channels, num_control_bus_channels, num_input_bus_channels, num_output_bus_channels, num_buffers, max_nodes, max_synth_defs)"
+  },
+  {
+    "text": "ServerManager",
+    "type": "class"
+  },
+  {
+    "text": "SoloPlayer",
+    "type": "class",
+    "description": "SoloPlayer objects"
+  },
+  {
+    "text": "StaticPatternMethod",
+    "type": "function",
+    "description": "Decorator that makes a function into a metaPattern static  method"
+  },
+  {
+    "text": "StreamRequestHandler",
+    "type": "class",
+    "description": "Define self.rfile and self.wfile for stream sockets."
+  },
+  {
+    "text": "Sub",
+    "type": "function"
+  },
+  {
+    "text": "SynthDef",
+    "type": "class"
+  },
+  {
+    "text": "SynthDefProxy",
+    "type": "class"
+  },
+  {
+    "text": "TCPServer",
+    "type": "class",
+    "description": "Base class for various socket-based server classes.\n\n    Defaults to synchronous IP stream (i.e., TCP).\n\n    Methods for the caller:\n\n    - __init__(server_address, RequestHandlerClass, bind_and_activate=True)\n    - serve_forever(poll_interval=0.5)\n    - shutdown()\n    - handle_request()  # if you don't use serve_forever()\n    - fileno() -> int   # for selector\n\n    Methods that may be overridden:\n\n    - server_bind()\n    - server_activate()\n    - get_request() -> request, client_address\n    - handle_timeout()\n    - verify_request(request, client_address)\n    - process_request(request, client_address)\n    - shutdown_request(request)\n    - close_request(request)\n    - handle_error()\n\n    Methods for derived classes:\n\n    - finish_request(request, client_address)\n\n    Class variables that may be overridden by derived classes or\n    instances:\n\n    - timeout\n    - address_family\n    - socket_type\n    - request_queue_size (only for stream sockets)\n    - allow_reuse_address\n\n    Instance variables:\n\n    - server_address\n    - RequestHandlerClass\n    - socket"
+  },
+  {
+    "text": "TempoClient",
+    "type": "class"
+  },
+  {
+    "text": "TempoClock",
+    "type": "class"
+  },
+  {
+    "text": "TempoServer",
+    "type": "class",
+    "description": "Used in TempoClock.py to connect to instances of FoxDot over a network. Sends\n        bpm changes over the network. On initial request this sends the start_time value\n        of the clock"
+  },
+  {
+    "text": "Thread",
+    "type": "class",
+    "description": "A class that represents a thread of control.\n\n    This class can be safely subclassed in a limited fashion. There are two ways\n    to specify the activity: by passing a callable object to the constructor, or\n    by overriding the run() method in a subclass."
+  },
+  {
+    "text": "ThreadedServer",
+    "type": "class",
+    "description": "Base class"
+  },
+  {
+    "text": "ThreadingMixIn",
+    "type": "class",
+    "description": "Mix-in class to handle each request in a new thread."
+  },
+  {
+    "text": "ThreadingOSCRequestHandler",
+    "type": "class",
+    "description": "Multi-threaded OSCRequestHandler;\n\tStarts a new RequestHandler thread for each unbundled OSCMessage"
+  },
+  {
+    "text": "ThreadingOSCServer",
+    "type": "class",
+    "description": "An Asynchronous OSCServer.\n\tThis server starts a new thread to handle each incoming request."
+  },
+  {
+    "text": "TimeVar",
+    "type": "class",
+    "description": "Var(values [,durs=[4]])"
+  },
+  {
+    "text": "TypeType",
+    "type": "class",
+    "description": "type(object_or_name, bases, dict)\ntype(object) -> the object's type\ntype(name, bases, dict) -> a new type"
+  },
+  {
+    "text": "UDPServer",
+    "type": "class",
+    "description": "UDP server class."
+  },
+  {
+    "text": "Wrapper",
+    "type": "class"
+  },
+  {
+    "text": "Xor",
+    "type": "function"
+  },
+  {
+    "text": "accompany",
+    "type": "method"
+  },
+  {
+    "text": "addfx",
+    "type": "method"
+  },
+  {
+    "text": "after",
+    "type": "method"
+  },
+  {
+    "text": "ambi",
+    "type": "function"
+  },
+  {
+    "text": "amp",
+    "type": "property"
+  },
+  {
+    "text": "amplify",
+    "type": "property"
+  },
+  {
+    "text": "arpy",
+    "type": "function"
+  },
+  {
+    "text": "asPattern",
+    "type": "function"
+  },
+  {
+    "text": "asStream",
+    "type": "function",
+    "description": "Forces any data into a [pattern] form"
+  },
+  {
+    "text": "audioin",
+    "type": "function"
+  },
+  {
+    "text": "bang",
+    "type": "method"
+  },
+  {
+    "text": "bass",
+    "type": "function"
+  },
+  {
+    "text": "bell",
+    "type": "function"
+  },
+  {
+    "text": "bend",
+    "type": "property"
+  },
+  {
+    "text": "benddelay",
+    "type": "property"
+  },
+  {
+    "text": "bits",
+    "type": "property"
+  },
+  {
+    "text": "blip",
+    "type": "function"
+  },
+  {
+    "text": "blur",
+    "type": "property"
+  },
+  {
+    "text": "bpf",
+    "type": "property"
+  },
+  {
+    "text": "bpm",
+    "type": "property"
+  },
+  {
+    "text": "bpnoise",
+    "type": "property"
+  },
+  {
+    "text": "bpr",
+    "type": "property"
+  },
+  {
+    "text": "braces_type",
+    "type": "class",
+    "description": "Returns a random integer between start and stop. If start is a container-type it returns\n        a random item for that container."
+  },
+  {
+    "text": "buf",
+    "type": "property"
+  },
+  {
+    "text": "bug",
+    "type": "function"
+  },
+  {
+    "text": "changeSynth",
+    "type": "method"
+  },
+  {
+    "text": "channel",
+    "type": "property"
+  },
+  {
+    "text": "charm",
+    "type": "function"
+  },
+  {
+    "text": "chop",
+    "type": "property"
+  },
+  {
+    "text": "cls",
+    "type": "class"
+  },
+  {
+    "text": "coarse",
+    "type": "property"
+  },
+  {
+    "text": "const",
+    "type": "class",
+    "description": "A number value that cannot be changed"
+  },
+  {
+    "text": "count",
+    "type": "method"
+  },
+  {
+    "text": "creep",
+    "type": "function"
+  },
+  {
+    "text": "crunch",
+    "type": "function"
+  },
+  {
+    "text": "crush",
+    "type": "property"
+  },
+  {
+    "text": "cut",
+    "type": "property"
+  },
+  {
+    "text": "dab",
+    "type": "function"
+  },
+  {
+    "text": "decay",
+    "type": "property"
+  },
+  {
+    "text": "deepcopy",
+    "type": "function",
+    "description": "Deep copy operation on arbitrary Python objects.\n\n    See the module's __doc__ string for more info."
+  },
+  {
+    "text": "default_root",
+    "type": "method"
+  },
+  {
+    "text": "default_scale",
+    "type": "method"
+  },
+  {
+    "text": "degrade",
+    "type": "method"
+  },
+  {
+    "text": "degree",
+    "type": "property"
+  },
+  {
+    "text": "delay",
+    "type": "property"
+  },
+  {
+    "text": "dirt",
+    "type": "function"
+  },
+  {
+    "text": "dist",
+    "type": "property"
+  },
+  {
+    "text": "donk",
+    "type": "function"
+  },
+  {
+    "text": "dots",
+    "type": "class",
+    "description": "Class for representing long Patterns in strings"
+  },
+  {
+    "text": "dub",
+    "type": "function"
+  },
+  {
+    "text": "dur",
+    "type": "property"
+  },
+  {
+    "text": "dur_updated",
+    "type": "method"
+  },
+  {
+    "text": "echo",
+    "type": "property"
+  },
+  {
+    "text": "env",
+    "type": "property"
+  },
+  {
+    "text": "equal_values",
+    "type": "function",
+    "description": "Returns True if this == that"
+  },
+  {
+    "text": "every",
+    "type": "method"
+  },
+  {
+    "text": "expvar",
+    "type": "function"
+  },
+  {
+    "text": "expvar",
+    "type": "class"
+  },
+  {
+    "text": "fmod",
+    "type": "property"
+  },
+  {
+    "text": "follow",
+    "type": "method"
+  },
+  {
+    "text": "formant",
+    "type": "property"
+  },
+  {
+    "text": "freq",
+    "type": "property"
+  },
+  {
+    "text": "fuzz",
+    "type": "function"
+  },
+  {
+    "text": "get_attributes",
+    "type": "method"
+  },
+  {
+    "text": "get_event",
+    "type": "method"
+  },
+  {
+    "text": "get_event_length",
+    "type": "method"
+  },
+  {
+    "text": "get_expanded_len",
+    "type": "function",
+    "description": "(0,(0,2)) returns 4. int returns 1"
+  },
+  {
+    "text": "get_inverse_op",
+    "type": "function",
+    "description": "Returns the opposite __dunder__ method e.g.\n        get_inverse_op(\"__add__\") -> \"__radd__\"\n        get_inverse_op(\"__ror__\") -> \"__or__\""
+  },
+  {
+    "text": "get_key",
+    "type": "method"
+  },
+  {
+    "text": "get_method_by_name",
+    "type": "method"
+  },
+  {
+    "text": "get_prime_funcs",
+    "type": "method"
+  },
+  {
+    "text": "get_synth_name",
+    "type": "method"
+  },
+  {
+    "text": "glass",
+    "type": "function"
+  },
+  {
+    "text": "gong",
+    "type": "function"
+  },
+  {
+    "text": "group_modi",
+    "type": "function",
+    "description": "Returns value from pgroup that modular indexes nested groups"
+  },
+  {
+    "text": "growl",
+    "type": "function"
+  },
+  {
+    "text": "hpf",
+    "type": "property"
+  },
+  {
+    "text": "hpr",
+    "type": "property"
+  },
+  {
+    "text": "inf",
+    "type": "constant",
+    "description": "Un-implemented"
+  },
+  {
+    "text": "info",
+    "type": "method"
+  },
+  {
+    "text": "instance",
+    "type": "class"
+  },
+  {
+    "text": "karp",
+    "type": "function"
+  },
+  {
+    "text": "kill",
+    "type": "method"
+  },
+  {
+    "text": "klank",
+    "type": "function"
+  },
+  {
+    "text": "largest_attribute",
+    "type": "method"
+  },
+  {
+    "text": "lazer",
+    "type": "function"
+  },
+  {
+    "text": "linvar",
+    "type": "function"
+  },
+  {
+    "text": "linvar",
+    "type": "class"
+  },
+  {
+    "text": "long",
+    "type": "class",
+    "description": "int(x=0) -> integer\nint(x, base=10) -> integer\n\nConvert a number or string to an integer, or return 0 if no arguments\nare given.  If x is a number, return x.__int__().  For floating point\nnumbers, this truncates towards zero.\n\nIf x is not a number or if base is given, then x must be a string,\nbytes, or bytearray instance representing an integer literal in the\ngiven base.  The literal can be preceded by '+' or '-' and be surrounded\nby whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.\nBase 0 means to interpret the base from the string as an integer literal.\n>>> int('0b100', base=0)\n4"
+  },
+  {
+    "text": "loop",
+    "type": "function"
+  },
+  {
+    "text": "loop_pattern_func",
+    "type": "function",
+    "description": "Decorator for allowing any Pattern function to create\n        multiple Patterns by using Patterns or TimeVars as arguments"
+  },
+  {
+    "text": "loop_pattern_method",
+    "type": "function",
+    "description": "Decorator for allowing any Pattern method to create\n        multiple (or rather, longer) Patterns by using Patterns as arguments"
+  },
+  {
+    "text": "lpf",
+    "type": "property"
+  },
+  {
+    "text": "lpr",
+    "type": "property"
+  },
+  {
+    "text": "lshift",
+    "type": "method"
+  },
+  {
+    "text": "map",
+    "type": "method"
+  },
+  {
+    "text": "mapvar",
+    "type": "class",
+    "description": "Like a `Pvar`, the `mapvar` returns a whole `Pattern` as opposed to a single\n        value, but instead of using the global clock to find the current value it\n        uses the value in an instance of the `PlayerKey` class."
+  },
+  {
+    "text": "mapvar",
+    "type": "function",
+    "description": "Like a `Pvar`, the `mapvar` returns a whole `Pattern` as opposed to a single\n        value, but instead of using the global clock to find the current value it\n        uses the value in an instance of the `PlayerKey` class."
+  },
+  {
+    "text": "marimba",
+    "type": "function"
+  },
+  {
+    "text": "max_length",
+    "type": "function",
+    "description": "Returns the largest length pattern"
+  },
+  {
+    "text": "metaPattern",
+    "type": "class",
+    "description": "Abstract base class for Patterns"
+  },
+  {
+    "text": "midinote",
+    "type": "property"
+  },
+  {
+    "text": "mirror",
+    "type": "method"
+  },
+  {
+    "text": "mix",
+    "type": "property"
+  },
+  {
+    "text": "modi",
+    "type": "function",
+    "description": "Returns the modulo index i.e. modi([0,1,2],4) will return 1"
+  },
+  {
+    "text": "multiply",
+    "type": "method"
+  },
+  {
+    "text": "never",
+    "type": "method"
+  },
+  {
+    "text": "new_message",
+    "type": "method"
+  },
+  {
+    "text": "noise",
+    "type": "function"
+  },
+  {
+    "text": "now",
+    "type": "method"
+  },
+  {
+    "text": "num_key_references",
+    "type": "method"
+  },
+  {
+    "text": "number_attr",
+    "type": "method"
+  },
+  {
+    "text": "number_of_layers",
+    "type": "method"
+  },
+  {
+    "text": "nylon",
+    "type": "function"
+  },
+  {
+    "text": "oct",
+    "type": "property"
+  },
+  {
+    "text": "offbeat",
+    "type": "method"
+  },
+  {
+    "text": "only",
+    "type": "method"
+  },
+  {
+    "text": "orient",
+    "type": "function"
+  },
+  {
+    "text": "osc_message",
+    "type": "method"
+  },
+  {
+    "text": "pads",
+    "type": "function"
+  },
+  {
+    "text": "pan",
+    "type": "property"
+  },
+  {
+    "text": "partial",
+    "type": "class",
+    "description": "partial(func, *args, **keywords) - new function with partial application\n    of the given arguments and keywords."
+  },
+  {
+    "text": "pattern_depth",
+    "type": "function",
+    "description": "Returns the level of nested arrays"
+  },
+  {
+    "text": "patternclass",
+    "type": "function"
+  },
+  {
+    "text": "pause",
+    "type": "method"
+  },
+  {
+    "text": "piano",
+    "type": "function"
+  },
+  {
+    "text": "play",
+    "type": "function"
+  },
+  {
+    "text": "play",
+    "type": "method"
+  },
+  {
+    "text": "pluck",
+    "type": "function"
+  },
+  {
+    "text": "prophet",
+    "type": "function"
+  },
+  {
+    "text": "pshift",
+    "type": "property"
+  },
+  {
+    "text": "pulse",
+    "type": "function"
+  },
+  {
+    "text": "quin",
+    "type": "function"
+  },
+  {
+    "text": "rAdd",
+    "type": "function"
+  },
+  {
+    "text": "rDiv",
+    "type": "function"
+  },
+  {
+    "text": "rFloorDiv",
+    "type": "function"
+  },
+  {
+    "text": "rGet",
+    "type": "function"
+  },
+  {
+    "text": "rMod",
+    "type": "function"
+  },
+  {
+    "text": "rOr",
+    "type": "function"
+  },
+  {
+    "text": "rPow",
+    "type": "function"
+  },
+  {
+    "text": "rSub",
+    "type": "function"
+  },
+  {
+    "text": "rXor",
+    "type": "function"
+  },
+  {
+    "text": "rate",
+    "type": "property"
+  },
+  {
+    "text": "rave",
+    "type": "function"
+  },
+  {
+    "text": "razz",
+    "type": "function"
+  },
+  {
+    "text": "reset",
+    "type": "method"
+  },
+  {
+    "text": "rest",
+    "type": "class",
+    "description": "Represents a rest when used with a Player's `dur` keyword"
+  },
+  {
+    "text": "reverse",
+    "type": "method"
+  },
+  {
+    "text": "rhythm",
+    "type": "method"
+  },
+  {
+    "text": "ripple",
+    "type": "function"
+  },
+  {
+    "text": "room",
+    "type": "property"
+  },
+  {
+    "text": "rotate",
+    "type": "method"
+  },
+  {
+    "text": "rshift",
+    "type": "method"
+  },
+  {
+    "text": "rtMidiNotFound",
+    "type": "class"
+  },
+  {
+    "text": "sample",
+    "type": "property"
+  },
+  {
+    "text": "saw",
+    "type": "function"
+  },
+  {
+    "text": "sawbass",
+    "type": "function"
+  },
+  {
+    "text": "scale",
+    "type": "property"
+  },
+  {
+    "text": "scatter",
+    "type": "function"
+  },
+  {
+    "text": "scratch",
+    "type": "function"
+  },
+  {
+    "text": "send",
+    "type": "method"
+  },
+  {
+    "text": "set_clock",
+    "type": "method"
+  },
+  {
+    "text": "set_queue_block",
+    "type": "method"
+  },
+  {
+    "text": "set_sample_bank",
+    "type": "method"
+  },
+  {
+    "text": "shape",
+    "type": "property"
+  },
+  {
+    "text": "shuffle",
+    "type": "method"
+  },
+  {
+    "text": "sitar",
+    "type": "function"
+  },
+  {
+    "text": "sliceToRange",
+    "type": "function"
+  },
+  {
+    "text": "slide",
+    "type": "property"
+  },
+  {
+    "text": "slidedelay",
+    "type": "property"
+  },
+  {
+    "text": "slidefrom",
+    "type": "property"
+  },
+  {
+    "text": "slider",
+    "type": "method"
+  },
+  {
+    "text": "smap",
+    "type": "method"
+  },
+  {
+    "text": "snick",
+    "type": "function"
+  },
+  {
+    "text": "soft",
+    "type": "function"
+  },
+  {
+    "text": "solo",
+    "type": "method"
+  },
+  {
+    "text": "soprano",
+    "type": "function"
+  },
+  {
+    "text": "spark",
+    "type": "function"
+  },
+  {
+    "text": "spin",
+    "type": "property"
+  },
+  {
+    "text": "spread",
+    "type": "method"
+  },
+  {
+    "text": "square_type",
+    "type": "class",
+    "description": "Useful for when you want many nested groups. This PGroup flattens the original\n        but the delay times are calculated in the same way as if the values were neseted"
+  },
+  {
+    "text": "squish",
+    "type": "function"
+  },
+  {
+    "text": "star",
+    "type": "function"
+  },
+  {
+    "text": "stdout",
+    "type": "function",
+    "description": "Forces prints to stdout and not console"
+  },
+  {
+    "text": "stop",
+    "type": "method"
+  },
+  {
+    "text": "stop_calling_all",
+    "type": "method"
+  },
+  {
+    "text": "strum",
+    "type": "method"
+  },
+  {
+    "text": "stutter",
+    "type": "method"
+  },
+  {
+    "text": "sus",
+    "type": "property"
+  },
+  {
+    "text": "swell",
+    "type": "function"
+  },
+  {
+    "text": "swell",
+    "type": "property"
+  },
+  {
+    "text": "test_for_circular_reference",
+    "type": "method"
+  },
+  {
+    "text": "twang",
+    "type": "function"
+  },
+  {
+    "text": "unpack",
+    "type": "method"
+  },
+  {
+    "text": "update",
+    "type": "method"
+  },
+  {
+    "text": "update_all_player_keys",
+    "type": "method"
+  },
+  {
+    "text": "update_pattern_methods",
+    "type": "method"
+  },
+  {
+    "text": "update_pattern_root",
+    "type": "method"
+  },
+  {
+    "text": "update_player_key",
+    "type": "method"
+  },
+  {
+    "text": "var",
+    "type": "function",
+    "description": "This is the TimeVar generator used in FoxDot. Calling it like `var()`\n        returns a TimeVar but setting an attribute `var.foo = var([1,2],4)` will\n        update the TimeVar that is already in `var.foo`.\n\n        In short, using `var.name = var([i, j])` means you don't have to delete\n        some of the text and replace it with `var.name.update([k, l])` you can\n        just use `var.name = var([k, l])` and the contents of the var will be\n        updated everywhere else in the program."
+  },
+  {
+    "text": "varsaw",
+    "type": "function"
+  },
+  {
+    "text": "versus",
+    "type": "method"
+  },
+  {
+    "text": "vib",
+    "type": "property"
+  },
+  {
+    "text": "vibdepth",
+    "type": "property"
+  },
+  {
+    "text": "viola",
+    "type": "function"
+  },
+  {
+    "text": "when",
+    "type": "keyword"
+  },
+  {
+    "text": "zap",
+    "type": "function"
+  }
+]

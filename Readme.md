@@ -6,6 +6,7 @@ It basically works like the native interface, with some extras:
 
 - Multiple cursors are executed in order of creation.
 - Can evaluate the entire file.
+- Autocompletion.
 
 ## Start livecoding
 
