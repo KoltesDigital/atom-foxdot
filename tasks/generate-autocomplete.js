@@ -6,7 +6,7 @@ gulp.task('generate-autocomplete', () => {
 		const pythonPath = process.env.PYTHONPATH || 'python';
 		const childProcess = spawn(pythonPath, ['tasks/generate-autocomplete.py']);
 
-		childProcess.on('close', code => {
+		childProcess.on('close', (code) => {
 			if (code) {
 				return reject(`python process exited with code ${code}`);
 			}

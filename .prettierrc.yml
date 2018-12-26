@@ -1,0 +1,8 @@
+overrides:
+  - files:
+      - "*.js"
+    options:
+      arrowParens: always
+      singleQuote: true
+      trailingComma: es5
+      useTabs: true
