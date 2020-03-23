@@ -8,7 +8,7 @@ gulp.task('generate-autocomplete', () => {
 
 		childProcess.on('close', (code) => {
 			if (code) {
-				return reject(`python process exited with code ${code}`);
+				return reject(`Python process exited with code ${code}.`);
 			}
 
 			return resolve();

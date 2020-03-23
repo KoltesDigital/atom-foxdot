@@ -1,6 +1,7 @@
 {
   "name": "foxdot",
-  "main": "./lib/foxdot",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "version": "1.0.1",
   "description": "FoxDot interface for Atom.",
   "keywords": [
@@ -14,32 +15,34 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "scripts": {
-    "lint": "eslint .",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+    "clean": "shx rm -rf lib",
+    "format": "eslint . --ext .ts --fix && prettier --write **/*{.js,.json,.ts,.yml}",
+    "lint": "eslint . --ext .ts && prettier --check **/*{.js,.json,.ts,.yml}",
+    "watch": "tsc --watch"
   },
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
-        "2.0.0": "getAutocompleteProvider"
+        "2.0.0": "provideAutocomplete"
       }
     }
   },
   "dependencies": {},
   "devDependencies": {
+    "@types/atom": "^1.40.1",
+    "@types/node": "^13.9.3",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-sort-keys-fix": "^1.1.0",
     "gulp": "^4.0.2",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.8",
     "prettier": "^2.0.1",
-    "require-dir": "^1.2.0"
+    "require-dir": "^1.2.0",
+    "shx": "^0.3.2",
+    "typescript": "^3.8.3"
   }
 }

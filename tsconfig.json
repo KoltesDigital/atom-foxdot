@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["DOM", "ESNext", "ESNext.AsyncIterable"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "sourceMap": false,
+    "strict": true,
+    "target": "ES2015"
+  },
+  "include": ["./src/**/*"]
+}
