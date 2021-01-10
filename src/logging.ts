@@ -81,7 +81,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('pre');
 		element.className = 'stdin';
-		element.innerHTML = message;
+		element.innerHTML = this.escapeHtml(message);
 
 		return this.addMessage(element, false);
 	}
