@@ -93,7 +93,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('pre');
 		element.className = 'stdout';
-		element.innerHTML = message;
+		element.innerHTML = this.escapeHtml(message);
 
 		return this.addMessage(element, false);
 	}
@@ -105,10 +105,23 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('pre');
 		element.className = 'stderr';
-		element.innerHTML = message;
+		element.innerHTML = this.escapeHtml(message);
 
 		return this.addMessage(element, true);
 	}
+
+	private escapeHtml(message: string) {
+		if (typeof message === 'object') {
+			message = message!.toString();
+		}
+		return message
+			 .replace(/&/g, "&amp;")
+			 .replace(/</g, "&lt;")
+			 .replace(/>/g, "&gt;")
+			 .replace(/"/g, "&quot;")
+			 .replace(/'/g, "&#039;");
+ 	}
+
 
 	private addMessage(element: HTMLElement, error: boolean) {
 		if (error) {
