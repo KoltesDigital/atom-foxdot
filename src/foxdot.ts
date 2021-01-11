@@ -1,6 +1,6 @@
+import { RangeCompatible } from 'atom';
 import { spawn, ChildProcessWithoutNullStreams } from 'child_process';
 import { EventEmitter } from 'events';
-import { RangeCompatible } from 'atom';
 import { Logger } from './logging';
 
 export class FoxDot extends EventEmitter {
@@ -12,8 +12,11 @@ export class FoxDot extends EventEmitter {
 
 		this.logger = logger;
 
-		const pythonPath = atom.config.get('foxdot.pythonPath') || 'python';
-		const samplesDirectory = atom.config.get('foxdot.samplesDirectory');
+		const pythonPath =
+			(atom.config.get('foxdot.pythonPath') as string) || 'python';
+		const samplesDirectory = atom.config.get(
+			'foxdot.samplesDirectory'
+		) as string;
 
 		let command = ['-m', 'FoxDot', '--pipe'];
 		if (samplesDirectory !== '') {

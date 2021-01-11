@@ -20,7 +20,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 		this.element.setAttribute('tabindex', '-1');
 		this.element.setAttribute('style', 'overflow-y: scroll;');
 
-		atom.workspace.open(this, {
+		void atom.workspace.open(this, {
 			activatePane: false,
 		});
 

@@ -1,4 +1,7 @@
-const suggestions = require('../data/autocomplete');
+const suggestions = require('../data/autocomplete') as Record<
+	string,
+	unknown
+>[];
 
 export default {
 	disableForSelector: '.source.python .comment',
@@ -10,10 +13,13 @@ export default {
 			return null;
 		}
 
-		suggestions.forEach((suggestion: { replacementPrefix: string }) => {
-			suggestion.replacementPrefix = prefix;
-		});
-		return suggestions;
+		const suggestionsWithReplacementPrefixes = suggestions.map(
+			(suggestion) => ({
+				...suggestion,
+				replacementPrefix: prefix,
+			})
+		);
+		return suggestionsWithReplacementPrefixes;
 	},
 
 	inclusionPriority: 10,

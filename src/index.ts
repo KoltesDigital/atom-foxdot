@@ -120,7 +120,9 @@ export function activate() {
 
 export function deactivate() {
 	stop();
-	subscriptions!.dispose();
+	if (subscriptions) {
+		subscriptions.dispose();
+	}
 }
 
 export function provideAutocomplete() {
