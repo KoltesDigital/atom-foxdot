@@ -25,7 +25,14 @@ export class FoxDot extends EventEmitter {
 		}
 
 		try {
-			this.childProcess = spawn(pythonPath, command);
+			this.childProcess = spawn(pythonPath, command, {
+				env: {
+					...process.env,
+					SC3_PLUGINS: (atom.config.get('foxdot.useSC3Plugins') as boolean)
+						? '1'
+						: undefined,
+				},
+			});
 
 			this.childProcess.stdout.on('data', (data) => {
 				logger?.stdout(data);

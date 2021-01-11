@@ -64,8 +64,14 @@ export const config = {
 	},
 	samplesDirectory: {
 		default: '',
-		description: 'Use an alternate directory for looking up samples.',
+		description:
+			'Use an alternate directory for looking up samples (restart FoxDot session to take effect).',
 		type: 'string',
+	},
+	useSC3Plugins: {
+		default: false,
+		description: 'Use SC3 plugins (restart FoxDot session to take effect).',
+		type: 'boolean',
 	},
 };
 
