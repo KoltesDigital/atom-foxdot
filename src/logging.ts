@@ -69,7 +69,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('div');
 		element.className = 'service';
-		element.innerHTML = message;
+		element.textContent = message;
 
 		return this.addMessage(element, error);
 	}
@@ -81,7 +81,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('pre');
 		element.className = 'stdin';
-		element.innerHTML = message;
+		element.textContent = message;
 
 		return this.addMessage(element, false);
 	}
@@ -93,7 +93,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('pre');
 		element.className = 'stdout';
-		element.innerHTML = message;
+		element.textContent = message;
 
 		return this.addMessage(element, false);
 	}
@@ -105,7 +105,7 @@ export class LoggerInWorkspace implements Logger, ViewModel {
 
 		const element = document.createElement('pre');
 		element.className = 'stderr';
-		element.innerHTML = message;
+		element.textContent = message;
 
 		return this.addMessage(element, true);
 	}
