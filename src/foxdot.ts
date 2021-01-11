@@ -24,28 +24,46 @@ export class FoxDot extends EventEmitter {
 			command = command.concat(['-d', samplesDirectory]);
 		}
 
-		this.childProcess = spawn(pythonPath, command);
+		try {
+			this.childProcess = spawn(pythonPath, command);
 
-		this.childProcess.stdout.on('data', (data) => {
-			logger?.stdout(data);
-		});
+			this.childProcess.stdout.on('data', (data) => {
+				logger?.stdout(data);
+			});
 
-		this.childProcess.stderr.on('data', (data) => {
-			logger?.stderr(data);
-		});
+			this.childProcess.stderr.on('data', (data) => {
+				logger?.stderr(data);
+			});
 
-		this.childProcess.on('close', (code) => {
-			if (code) {
-				logger?.service(`FoxDot has exited with code ${code}.`, true);
+			this.childProcess.on('error', (err: Error & { code?: unknown }) => {
+				if (err.code === 'ENOENT') {
+					logger?.service(
+						`Python was not found. Check that you have Python installed. You may need to give the full path to the Python executable in the FoxDot package's settings.`,
+						true
+					);
+				}
+				logger?.service(err.toString(), true);
+			});
+
+			this.childProcess.on('close', (code) => {
+				if (code) {
+					logger?.service(`FoxDot has exited with code ${code}.`, true);
+				} else {
+					logger?.service('FoxDot has stopped.', false);
+				}
+
+				this.childProcess = undefined;
+				this.emit('stop');
+			});
+
+			logger?.service('FoxDot has started.', false);
+		} catch (err: unknown) {
+			if (err instanceof Error) {
+				logger?.service(err.toString(), true);
 			} else {
-				logger?.service('FoxDot has stopped.', false);
+				logger?.service('Unknown error', true);
 			}
-
-			this.childProcess = undefined;
-			this.emit('stop');
-		});
-
-		logger?.service('FoxDot has started.', false);
+		}
 	}
 
 	dispose() {
